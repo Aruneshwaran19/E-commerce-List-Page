@@ -541,16 +541,8 @@ button {
 
 /* Media Queries for Mobile */
 @media (max-width: 480px) {
-  .product-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .product-card {
-    padding: 10px;
-  }
-
   .header-title {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .navbar {
@@ -561,7 +553,16 @@ button {
   .navbar-link {
     display: block;
     width: 100%;
-    padding: 12px 0;
+    padding: 10px 0;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .product-card {
+    padding: 10px;
   }
 
   .cart-modal {
@@ -570,50 +571,40 @@ button {
     white-space: nowrap;
   }
 
-  .product-info {
-    padding: 10px;
-  }
-
   .cart-item {
-    position: relative;
     padding: 10px;
     margin-bottom: 10px;
-    background-color: #f8f8f8;
-    border-radius: 8px;
-    border: 2px solid #ccc;
-    display: inline-block;
-    width: 300px;
+    border: 1px solid #ccc;
+    position: relative;
   }
 
   .remove-item {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    background-color: red;
-    color: white;
     padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    right: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .total-amount {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
   }
 
   .total-amount-container {
-    width: 100%;
     text-align: center;
     margin-top: 20px;
     padding: 0 10px;
   }
 
-  .total-amount-button {
-    width: 2%;
-    padding: 8px 12px;
-    background-color: #4caf50;
-    color: white;
-    text-align: center;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-sizing: border-box;
+  .total-amount-button,
+  .checkout-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
     margin: 10px 0;
   }
 }
