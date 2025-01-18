@@ -474,7 +474,7 @@ button {
   animation: fadeInOut 4s forwards;
 }
 
-/* Media Queries */
+/* Media Queries for Tablet and Mobile */
 @media (max-width: 768px) {
   .header-title {
     font-size: 24px;
@@ -525,7 +525,7 @@ button {
     border-radius: 8px;
     border: 2px solid #ccc;
     display: inline-block;
-    width: 200px;
+    width: 450px;
   }
 
   .remove-item {
@@ -538,7 +538,40 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    visibility: visible;
+  }
+
+  .total-amount-container {
+    width: 50%;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+
+  .total-amount-button {
+    width: 50%;
+    padding: 6px 10px;
+    font-size: 14px;
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 10px 0;
+  }
+  .checkout-button {
+    width: 50%;
+    padding: 6px 10px;
+    font-size: 14px;
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 10px 0;
   }
 }
 
@@ -584,7 +617,7 @@ button {
     border-radius: 8px;
     border: 2px solid #ccc;
     display: inline-block;
-    width: 200px;
+    width: 300px;
   }
 
   .remove-item {
@@ -597,19 +630,19 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    visibility: visible;
   }
 
   .total-amount-container {
     width: 100%;
     text-align: center;
     margin-top: 20px;
+    padding: 0 10px;
   }
 
   .total-amount-button {
-    width: 10%;
-    padding: 10px;
-    background-color: #4CAF50;
+    width: 2%;
+    padding: 8px 12px;
+    background-color: #4caf50;
     color: white;
     text-align: center;
     border: none;
