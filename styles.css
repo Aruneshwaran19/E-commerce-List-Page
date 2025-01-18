@@ -508,6 +508,8 @@ button {
   .cart-modal {
     width: 90%;
     padding: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
   }
 
   .product-card {
@@ -517,27 +519,26 @@ button {
 
   .cart-item {
     position: relative;
-    padding: 15px; /* Increased padding */
+    padding: 10px;
     margin-bottom: 10px;
     background-color: #f8f8f8;
     border-radius: 8px;
     border: 2px solid #ccc;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    display: inline-block;
+    width: 200px;
   }
 
   .remove-item {
-    position: absolute; /* Ensure the button stays in the right position */
-    top: 10px; /* Adjust as needed */
-    right: 10px; /* Adjust as needed */
+    position: absolute;
+    top: 5px;
+    right: 5px;
     background-color: red;
     color: white;
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    visibility: visible;
   }
 }
 
@@ -567,24 +568,23 @@ button {
 
   .cart-modal {
     width: 95%;
+    overflow-x: auto;
+    white-space: nowrap;
   }
 
   .product-info {
     padding: 10px;
   }
 
-  /* Ensure remove button is visible and positioned well on mobile */
   .cart-item {
     position: relative;
-    padding: 10px; /* Adjust padding */
+    padding: 10px;
     margin-bottom: 10px;
     background-color: #f8f8f8;
     border-radius: 8px;
     border: 2px solid #ccc;
-    display: flex;
-    flex-direction: column; /* Stack content vertically */
-    align-items: flex-start;
-    width: 100%;
+    display: inline-block;
+    width: 200px;
   }
 
   .remove-item {
@@ -597,5 +597,25 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    visibility: visible;
+  }
+
+  .total-amount-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .total-amount-button {
+    width: 10%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 10px 0;
   }
 }
