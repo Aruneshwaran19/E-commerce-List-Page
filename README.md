@@ -22,10 +22,10 @@ A simple e-commerce product page with cart functionality, built using HTML, CSS,
 ```
 e-commerce-project/
 ├── assets/           # Product images
+├── README.md         # Project info
 ├── index.html        # Main file
 ├── css/              # Styles
 ├── js/               # Scripts
-├── README.md         # Project info
 ```
 
 ## Animation Choices
