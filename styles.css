@@ -474,14 +474,14 @@ button {
   animation: fadeInOut 4s forwards;
 }
 
-/* Media Queries for Tablet and Mobile */
+/* Media Queries for Tablet */
 @media (max-width: 768px) {
   .header-title {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .navbar {
-    margin-top: 15px;
+    margin-top: 10px;
     padding: 10px;
     flex-direction: column;
     align-items: center;
@@ -495,86 +495,51 @@ button {
 
   .navbar-link {
     display: block;
-    padding: 10px;
-    text-align: center;
+    padding: 8px 0;
   }
 
   .product-grid {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 15px;
   }
 
   .cart-modal {
     width: 90%;
-    padding: 20px;
+    padding: 15px;
     overflow-x: auto;
     white-space: nowrap;
   }
 
   .product-card {
-    flex-direction: column;
-    align-items: center;
+    padding: 10px;
   }
 
   .cart-item {
-    position: relative;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 10px;
-    background-color: #f8f8f8;
-    border-radius: 8px;
-    border: 2px solid #ccc;
-    display: inline-block;
-    width: 450px;
+    border: 1px solid #ccc;
   }
 
   .remove-item {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    background-color: red;
-    color: white;
     padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
   }
 
   .total-amount-container {
-    width: 50%;
     text-align: center;
     margin-top: 20px;
     padding: 0 10px;
   }
 
-  .total-amount-button {
-    width: 50%;
-    padding: 6px 10px;
-    font-size: 14px;
-    background-color: #4caf50;
-    color: white;
-    text-align: center;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-sizing: border-box;
-    margin: 10px 0;
-  }
+  .total-amount-button,
   .checkout-button {
-    width: 50%;
-    padding: 6px 10px;
-    font-size: 14px;
-    background-color: #4caf50;
-    color: white;
-    text-align: center;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
     margin: 10px 0;
   }
 }
 
+/* Media Queries for Mobile */
 @media (max-width: 480px) {
   .product-grid {
     grid-template-columns: 1fr;
